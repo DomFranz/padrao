@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="icon" href="./src/assets/coroa.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- BLOQUEIO DE INDEXAÇÃO -->
+  <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+  <meta name="googlebot" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+  <meta name="bingbot" content="noindex, nofollow">
+  <meta name="slurp" content="noindex, nofollow">
+  <meta name="yandex" content="none">
+  <meta name="baiduspider" content="noindex, nofollow">
+  <meta name="duckduckbot" content="noindex, nofollow">
+  <meta name="googlebot-news" content="noindex, nofollow">
+  <meta name="msnbot" content="noindex, nofollow">
+  <meta name="ia_archiver" content="noindex, nofollow">
+
+  <!-- PROTEÇÃO CONTRA PREVIEW EM REDES SOCIAIS -->
+  <meta property="og:title" content=" " />
+  <meta property="og:description" content=" " />
+  <meta property="og:image" content=" " />
+  <meta name="twitter:card" content="none" />
+  <meta name="twitter:title" content=" " />
+  <meta name="twitter:description" content=" " />
+  <meta name="twitter:image" content=" " />
+
+  <!-- DESATIVA ARQUIVAMENTO POR WAYBACK MACHINE -->
+  <meta name="archiver" content="noarchive" />
+
+  <!-- SEO FAKE -->
+  <meta name="author" content=" " />
+  <meta name="description" content=" " />
+  <meta name="keywords" content=" " />
+  <meta name="generator" content=" " />
+  <meta name="rating" content="adult" />
+  <meta name="classification" content="restricted" />
+  <meta name="target-audience" content="18+" />
+
+  <!-- Fontes e Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Questrial&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Proteção botão direito -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+
+  <!-- Redirecionamento para bots de redes sociais -->
+  <script>
+    const bots = [
+      'facebookexternalhit', 'facebot', 'twitterbot', 'linkedinbot',
+      'tiktok', 'pinterest', 'Slackbot', 'WhatsApp', 'discordbot', 'TelegramBot'
+    ];
+    const ua = navigator.userAgent.toLowerCase();
+    const ref = document.referrer.toLowerCase();
+    if (bots.some(bot => ua.includes(bot) || ref.includes(bot))) {
+      window.location.replace("https://google.com");
+    }
+  </script>
+
+  <title>Princess Cat</title>
+</head>
+<body class="min-h-screen text-white font-['Inter'] leading-relaxed relative">
+
+  <!-- Fundo fixo (imagem de fundo) -->
+  <div class="fixed inset-0 bg-[url('./src/assets/BG.jpg')] bg-cover bg-center z-0"></div>
+
+  <!-- Overlayer escuro por cima do fundo -->
+  <div class="absolute inset-4 bg-black opacity-60 z-10 rounded-lg"></div>
+
+  <!-- Conteúdo principal -->
+  <div class="relative z-20 overflow-hidden">
+    <header class="pt-8 h-[152px]">
+      <div class="flex justify-center items-center mt-6">
+        <!-- Círculo com borda amarela fina -->
+        <div class="w-[130px] h-[130px] rounded-full border-[3px] border-[#FAD560] flex justify-center items-center transition-transform hover:scale-105 duration-300 ease-out opacity-0 -translate-y-8">
+          <div class="w-[120px] h-[120px] rounded-full border-[3px] border-black/60 flex justify-center items-center">
+            <img src="./src/assets/perfil.jpg" alt="Cat Princess" class="w-[110px] h-[110px] rounded-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="p-6 max-w-[580px] w-[90%] mx-auto grid gap-6 mt-8">
+
+      <!-- Introdução -->
+      <div class="flex flex-col justify-center items-center space-y-4 opacity-0 translate-y-6 transition duration-700 ease-out">
+        <h1 class="font-['Dancing_Script'] text-[#FAD560] text-5xl">Princess Cat</h1>
+        
+        <h2 class="font-['Questrial'] uppercase text-[10px] tracking-[0.2em] leading-[1.6] text-[#FAD560] text-center break-words px-2">
+          CAT WORKER | MODELO | CONTEÚDO CAT
+        </h2>
+        
+        <p class="font-['Questrial'] text-center max-w-xl uppercase text-sm leading-[1.6] tracking-[0.33em] text-[#FAD560]">
+          Sou uma gatinha bem linda, disposta a atender todas as suas vontades e ser muito amada!
+        </p>
+      </div>
+
+      <!-- Estilo de animação -->
+      <style>
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-8px); }
+        }
+        button:hover,
+        button:active,
+        button.touch-bounce {
+          animation: bounce 0.3s ease;
+        }
+      </style>
+
+      <!-- Botões principais -->
+      <div class="flex flex-col items-center gap-4 mt-2 opacity-0 translate-y-6 transition duration-700 ease-out font-['Questrial']">
+        <a target="_blank" href="./">
+          <button
+            class="w-64 px-4 py-2 border border-[#FAD560] text-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 1
+          </button>
+        </a>
+
+        <a target="_blank" href="./">
+          <button
+            class="w-64 px-4 py-2 border border-[#FAD560] text-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 2
+          </button>
+        </a>
+
+        <a target="_blank" href="./">
+          <button
+            class="w-64 px-4 py-2 border border-[#FAD560] text-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 3
+          </button>
+        </a>
+      </div>
+
+      <!-- Botões FREE -->
+      <div class="flex justify-center gap-1 opacity-0 translate-y-6 transition duration-700 ease-out font-['Questrial']">
+        <a target="_blank" href="./">
+          <button
+            class="py-2 w-32 border border-[#FAD560] text-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            FREE 1
+          </button>
+        </a>
+
+        <a target="_blank" href="./">
+          <button
+            class="py-2 w-32 border border-[#FAD560] text-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            FREE 2
+          </button>
+        </a>
+      </div>
+
+      <p class="font-['Questrial'] text-center max-w-xl uppercase text-sm leading-[1.6] tracking-[0.33em] text-[#FAD560] mt-2 whitespace-nowrap">
+        Bem-vindo ao meu reino!
+      </p>
+<!-- GIFs / Vídeos -->
+<section>
+  <div class="flex flex-col justify-center items-center space-y-4 opacity-0 translate-y-6 transition duration-700 ease-out">
+    <h1 class="font-['Dancing_Script'] text-[#FAD560] text-5xl">Princess Cat</h1>
+    <p class="font-['Questrial'] text-center max-w-xl text-sm leading-[1.6] tracking-[0.33em] text-[#FAD560]">
+      Vem ter uma prévia do que te espera!
+    </p>
+
+    <ul class="flex flex-wrap justify-center gap-8 mt-6">
+
+      <!-- BLOCO 1 -->
+      <li class="flex flex-col items-center text-center space-y-4 p-6 border border-[#FAD560] rounded-lg shadow-lg bg-black/10 transition-transform max-w-md">
+        <img 
+    src="./src/assets/gif2.gif" 
+    alt="GIF animado"
+   class="w-full rounded-lg hover:scale-105 transition-transform drop-shadow-[0_5px_10px_rgba(250,213,96,0.5)]" />
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 1
+          </button>
+        </a>
+
+        <p class="font-['Questrial'] text-[#FAD560] text-sm leading-[1.6] tracking-[0.33em]">
+          Conteúdos exclusivos, solo e acompanhada, +500 mídias!
+        </p>
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            Botão 2<br>Clique aqui!
+          </button>
+        </a>
+      </li>
+
+      <!-- BLOCO 2 -->
+      <li class="flex flex-col items-center text-center space-y-4 p-6 border border-[#FAD560] rounded-lg shadow-lg bg-black/10 transition-transform max-w-md">
+        <img 
+    src="./src/assets/gif1.gif" 
+    alt="GIF animado"
+    class="w-full rounded-lg hover:scale-105 transition-transform drop-shadow-[0_5px_10px_rgba(250,213,96,0.5)]" />
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 1
+          </button>
+        </a>
+
+        <p class="font-['Questrial'] text-[#FAD560] text-sm leading-[1.6] tracking-[0.33em]">
+          Converse comigo no meu chat exclusivo! Avaliação de brinde para todos os assinantes!
+        </p>
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 2<br>Clique aqui!
+          </button>
+        </a>
+      </li>
+
+      <!-- BLOCO 3 -->
+      <li class="flex flex-col items-center text-center space-y-4 p-6 border border-[#FAD560] rounded-lg shadow-lg bg-black/10 transition-transform max-w-md">
+        <img 
+    src="./src/assets/gif3.gif" 
+    alt="GIF animado"
+    class="w-full rounded-lg hover:scale-105 transition-transform drop-shadow-[0_5px_10px_rgba(250,213,96,0.5)]" />
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 1
+          </button>
+        </a>
+
+        <p class="font-['Questrial'] text-[#FAD560] text-sm leading-[1.6] tracking-[0.33em]">
+          Converse comigo no meu chat exclusivo! Avaliação de brinde para todos os assinantes!
+        </p>
+
+        <a target="_blank" href="./">
+          <button
+            class="font-['Questrial'] text-[#FAD560] uppercase text-sm w-64 px-4 py-2 border border-[#FAD560] bg-transparent rounded-md hover:bg-[#FAD560]/10 transition"
+            onanimationend="this.classList.remove('touch-bounce')"
+            ontouchstart="this.classList.add('touch-bounce')">
+            BOTÃO 2
+          </button>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</section>
+<!-- Redes sociais -->
+<section>
+  <div class="flex flex-col justify-center items-center space-y-4 opacity-0 translate-y-6 transition duration-700 ease-out">
+    <h2 class="font-['Dancing_Script'] text-[#FAD560] text-5xl">
+      Redes Sociais
+    </h2>
+
+    <h3 class="font-['Questrial'] uppercase text-[10px] tracking-[0.2em] leading-[1.6] text-[#FAD560] text-center break-words px-2">
+      Vem se conectar comigo!
+    </h3>
+
+    <ul class="flex justify-center items-center gap-6 mt-6 flex-wrap text-[#FAD560] font-['Questrial'] text-sm">
+
+      <!-- BLUESKY -->
+      <li class="transition-transform hover:scale-110">
+        <a target="_blank" href="./" class="flex items-center gap-2">
+          <img src="./src/assets/logo-blue.PNG" alt="Bluesky" class="w-6 h-6 rounded-full" />
+          BLUESKY
+        </a>
+      </li>
+
+      <!-- PRIVACY -->
+      <li class="transition-transform hover:scale-110">
+        <a target="_blank" href="./" class="flex items-center gap-2">
+          <img src="./src/assets/logo-privacy.PNG" alt="Privacy" class="w-6 h-6 rounded-full" />
+          PRIVACY
+        </a>
+      </li>
+
+      <!-- ONLYFANS -->
+      <li class="transition-transform hover:scale-110">
+        <a target="_blank" href="./" class="flex items-center gap-2">
+          <img src="./src/assets/logo-only.PNG" alt="OnlyFans" class="w-6 h-6 rounded-full" />
+          ONLYFANS
+        </a>
+      </li>
+
+    </ul>
+  </div>
+ 
+</section>
+
+<!-- SCRIPT: Animações de entrada -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.opacity-0');
+    elements.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.remove('opacity-0', 'translate-y-6', '-translate-y-8');
+        el.classList.add('opacity-100', 'translate-y-0');
+      }, i * 200);
+    });
+  });
+</script>
+
+<!-- SCRIPT: Bloquear botão direito -->
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+</script>
+
+<!-- SCRIPT: Redirecionamento se for bot de rede social -->
+<script>
+  const userAgent = navigator.userAgent.toLowerCase();
+  const referer = document.referrer.toLowerCase();
+  const botDetected = bots.some(bot => userAgent.includes(bot) || referer.includes(bot));
+  if (botDetected) {
+    window.location.replace("https://google.com");
+  }
+</script>
+<footer class="text-center text-xs text-[#FAD560] mt-6 mb-4 font-['Questrial']">
+  
+  © 2025 <img src="./src/assets/cruz.ico" alt="Cruz" class="inline w-4 h-4 align-middle" /> <span class="font-bold">Comar</span>. Todos os direitos reservados.
+</footer>
